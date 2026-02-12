@@ -11,7 +11,7 @@
     
 </script>
 
-<div class="flex flex-row">
-    <enhanced:img class="float-left w-10 invert" alt="{tgt} image" about="{tgt} image" src={`/src/lib/assets/controllers/xbox/${tgt}.png`}/>
+<div class="">
+    <enhanced:img class="w-5 h-5" alt="{tgt} image" about="{tgt} image" src={`/src/lib/assets/controllers/xbox/${tgt}.png`}/>
     <input class="ui_input">
 </div>

@@ -24,5 +24,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"svelvet": "^11.0.5"
+	}
 }
