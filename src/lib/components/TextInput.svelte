@@ -1,5 +1,5 @@
 <script lang="ts">
-    type ControllerPrompt = 
+    export type ControllerPrompt = 
     "buttona" | "buttonb" | "buttonx" | "buttony"
     | "dpadd" | "dpadu" | "dpadl" | "dpadr"
     | "lstick" | "rstick"
@@ -7,11 +7,11 @@
     | "menu" | "share" | "view"
     
 
-    let {tgt}: {tgt: ControllerPrompt} = $props();
+    let {tgt}: {tgt: ControllerPrompt | string} = $props();
     
 </script>
 
 <div class="">
-    <enhanced:img class="w-5 h-5" alt="{tgt} image" about="{tgt} image" src={`/src/lib/assets/controllers/xbox/${tgt}.png`}/>
+    <enhanced:img class="w-5 h-5 invert" alt="{tgt} image" about="{tgt} image" src={`/src/lib/assets/controllers/xbox/${tgt}.png`}/>
     <input class="ui_input">
 </div>
